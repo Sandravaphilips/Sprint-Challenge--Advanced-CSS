@@ -1,1 +1,17 @@
 // Mixins Here
+.flex-d (@direction) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: space-between;
+}
+
+.button (@width, @height, @bor-rad) {
+    background-color: @header-font-color;
+        width: @width;
+        text-align: center;
+        height: @height;
+        border-radius: @bor-rad;
+        // padding-top: 5px;
+        font-size: 15px;
+        color: white;
+}

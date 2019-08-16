@@ -1,8 +1,22 @@
 // Home Content
+@import "variables.less";
+@import "mixins.less";
 
 .home {
 
   .intro {
+
+    margin-top: 25px;
+
+    // FIGURE IN HEADER
+    @media @phone {
+
+      margin-top: 10px;
+
+      figure img {
+        width: 100%
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -24,6 +38,23 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    // FOR PHONE
+    @media @phone {
+      :nth-child(2) {
+        display: none;
+      }
+
+      :nth-child(3) {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        margin: 15px 5%;
+
+      }
     }
   }
 
@@ -58,6 +89,19 @@
       }
 
       .btn {
+        .button(30%, 30px, 8%);
+        padding-top: 5px;
+
+        @media @phone {
+          .button(100%, 40px, 4px);
+          padding-top: 10px;
+          border: none;
+        }
+      }
+
+      .btn:hover {
+        background-color: cyan;
+        color: black;
       }
     }
 
@@ -69,6 +113,24 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+
+    // FOR PHONE
+    @media @phone {
+      .flex-d(column-reverse);
+      width: 100%;
+      margin-top: 30px;
+      padding: 20px 4%;
+
+      .walk-img {
+        width: 100%;
+        margin: 0
+      }
+
+      .walk-text {
+        width: 100%;
+        margin-top: 20px;
       }
     }
   }
