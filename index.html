@@ -3,11 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet/less" type="text/css" href="./less/index.less" />
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,11 +17,24 @@
 <body>
 
  <!-- navigation code here -->
+ <nav>
+    <h1>SpaceWalkers</h1>
+    <section class="navigation">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="#">Sign in</a>
+    </section>
+  </nav>
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+      <figure>
+        <img src="./img/main-header.png" alt="main-header">
+      </figure> 
 
       <h2>Lift Off</h2>
     
@@ -67,5 +80,6 @@
     </footer>
 
   </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
 </body>
 </html>
